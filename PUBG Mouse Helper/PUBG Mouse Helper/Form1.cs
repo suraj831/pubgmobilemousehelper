@@ -189,7 +189,7 @@ namespace PUBG_Mouse_Helper
             toolStripMenuItemActivate.PerformClick();
             string enabledOrDisabled = toolStripMenuItemActivate.Checked ? "activate" : "deactivate";
             string enabledOrDisabledANTI = !toolStripMenuItemActivate.Checked ? "activate" : "deactivate";
-            new MessageToast($"Program {enabledOrDisabled}d.\nPress F6 to {enabledOrDisabledANTI}.", 50).Show();
+            new MessageToast($"Program {enabledOrDisabled}d.\nPress F2 to {enabledOrDisabledANTI}.", 50).Show();
         }
 
         public void OnWeaponSlotChangeHotkeyPressed(int slotNumber)
@@ -401,7 +401,7 @@ namespace PUBG_Mouse_Helper
 Here are a couple pro-tips anyway :
 
 1. Try running as administrator if the program doesn't seem to work.
-2. Use F6 key to enable/disable the program.
+2. Use F2 key to enable/disable the program.
 3. Use F7 key to toggle recoil compensation on and off.
 4. You can change the active preset while monitoring is on by pressing Enter key and making a selection.
 5. You can use the up and down arrow keys to change the vertical recoil correction.
@@ -423,8 +423,8 @@ Here are a couple pro-tips anyway :
 
             }
 
-            //swallow the shortcut key F6 for 'Activate' menu, lest there be a conflict
-            if (keyData == Keys.F6)
+            //swallow the shortcut key F2 for 'Activate' menu, lest there be a conflict
+            if (keyData == Keys.F2)
                 return false;
 
             return base.ProcessCmdKey(ref msg, keyData);
