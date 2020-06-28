@@ -246,7 +246,7 @@
             // 
             this.toolStripMenuItemActivate.CheckOnClick = true;
             this.toolStripMenuItemActivate.Name = "toolStripMenuItemActivate";
-            this.toolStripMenuItemActivate.ShortcutKeys = System.Windows.Forms.Keys.F6;
+            this.toolStripMenuItemActivate.ShortcutKeys = System.Windows.Forms.Keys.F2;
             this.toolStripMenuItemActivate.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemActivate.Text = "Activate";
             this.toolStripMenuItemActivate.ToolTipText = "Activate auto fire";
